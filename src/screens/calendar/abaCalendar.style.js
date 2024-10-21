@@ -6,7 +6,7 @@ export const styles = {
 
         backgoundColor: COLORS.white,
         flex: 1,
-        padding: 12
+        paddingTop: 20
 
     },
 
@@ -14,7 +14,7 @@ export const styles = {
 
         fontSize: FONT_SIZE.medium,
         color: COLORS.gray1,
-        marginBottom: 15,
+        marginTop: 15,
         marginLeft: 10
     }
 

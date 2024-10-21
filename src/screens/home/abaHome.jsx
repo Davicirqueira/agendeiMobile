@@ -1,6 +1,8 @@
 import { FlatList, Text, View } from "react-native";
 import { styles } from "./abaHome.style";
 import { doctors } from "../../constants/data.js";
+import Doctor from "../../components/doctor/doctor.jsx";
+import icon from '../../constants/icon.js';
 
 export default function AbaHome(){
 
@@ -17,7 +19,10 @@ export default function AbaHome(){
 
                 return(
 
-                    <Text>{item.name}</Text>
+                    <Doctor name={item.name} 
+                    icon={item.icon == "M" ? icon.male : icon.female}
+                    specialty={item.specialty}/>
+                    
                 );
 
             }}/>
